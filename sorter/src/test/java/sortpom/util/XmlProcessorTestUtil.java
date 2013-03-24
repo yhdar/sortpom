@@ -81,13 +81,13 @@ public class XmlProcessorTestUtil {
         if (sortAlfabeticalOnly) {
             wrapperFactory = new WrapperFactory() {
 
-                @Override
+                //@Override
                 public WrapperOperations createFromRootElement(final Element rootElement) {
                     return new GroupWrapper(new AlphabeticalSortedWrapper(rootElement));
                 }
 
                 @SuppressWarnings("unchecked")
-                @Override
+                //@Override
                 public <T extends Content> Wrapper<T> create(final T content) {
                     if (content instanceof Element) {
                         Element element = (Element) content;

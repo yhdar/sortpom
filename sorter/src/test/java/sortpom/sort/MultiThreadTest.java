@@ -63,7 +63,7 @@ public class MultiThreadTest {
             this.predefinedSortOrder = predefinedSortOrder;
         }
 
-        @Override
+        ////@Override
         public Boolean call() {
             try {
                 SortPomImplUtil.create()

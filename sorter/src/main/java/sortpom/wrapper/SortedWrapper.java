@@ -21,12 +21,12 @@ public class SortedWrapper implements Wrapper<Element> {
         this.sortOrder = sortOrder;
     }
 
-    @Override
+    //@Override
     public Element getContent() {
         return element;
     }
 
-    @Override
+    //@Override
     public boolean isBefore(final Wrapper<? extends Content> wrapper) {
         return !(wrapper instanceof SortedWrapper) || isBeforeSortedWrapper((SortedWrapper) wrapper);
     }
@@ -35,12 +35,12 @@ public class SortedWrapper implements Wrapper<Element> {
         return wrapper.sortOrder > sortOrder;
     }
 
-    @Override
+    //@Override
     public boolean isContentElement() {
         return true;
     }
 
-    @Override
+    //@Override
     public boolean isResortable() {
         return true;
     }
@@ -49,14 +49,14 @@ public class SortedWrapper implements Wrapper<Element> {
         return sortOrder;
     }
 
-    @Override
+    //@Override
     public String toString() {
         return "SortedWrapper{" +
                 "element=" + element +
                 '}';
     }
 
-    @Override
+    //@Override
     public String toString(String indent) {
         return indent + toString();
     }

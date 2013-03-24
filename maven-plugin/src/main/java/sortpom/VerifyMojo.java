@@ -146,7 +146,7 @@ public class VerifyMojo extends AbstractMojo {
      *          exception that will be handled by plugin framework
      * @see org.apache.maven.plugin.Mojo#execute()
      */
-    @Override
+    //@Override
     public void execute() throws MojoFailureException {
         setup();
         sortPom();

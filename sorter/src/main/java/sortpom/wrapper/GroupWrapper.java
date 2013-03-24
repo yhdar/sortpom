@@ -24,7 +24,7 @@ public class GroupWrapper implements WrapperOperations {
         addContent(wrapper);
     }
 
-    @Override
+    ////@Override
     public final void createWrappedStructure(final WrapperFactory factory) {
         GroupWrapper currentWrapper = null;
         for (Content child : castToContentList(elementContent)) {
@@ -45,7 +45,7 @@ public class GroupWrapper implements WrapperOperations {
         }
     }
 
-    @Override
+    ////@Override
     public final void detachStructure() {
         if (elementContent != null) {
             elementContent.getContent().detach();
@@ -58,7 +58,7 @@ public class GroupWrapper implements WrapperOperations {
         }
     }
 
-    @Override
+    //@Override
     public final List<Content> getWrappedStructure() {
         List<Content> returnValue = new ArrayList<Content>();
         for (Wrapper<? extends Content> content : otherContentList) {
@@ -72,7 +72,7 @@ public class GroupWrapper implements WrapperOperations {
         return returnValue;
     }
 
-    @Override
+    //@Override
     public final void sortStructureAttributes() {
         if (elementContent != null) {
             elementContent.getContent().setAttributes(getSortedAttributes(elementContent));
@@ -82,7 +82,7 @@ public class GroupWrapper implements WrapperOperations {
         }
     }
 
-    @Override
+    //@Override
     public final void sortStructureElements() {
         for (int i = 0; i < children.size(); i++) {
             GroupWrapper wrapperImpl = children.get(i);
@@ -147,7 +147,7 @@ public class GroupWrapper implements WrapperOperations {
         return returnValue;
     }
 
-    @Override
+    //@Override
     public String toString() {
         return toString("");
     }

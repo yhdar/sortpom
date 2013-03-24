@@ -16,35 +16,35 @@ public final class ThrowAwayContentWrapper implements Wrapper<Text> {
     }
 
     /** @see sortpom.wrapper.Wrapper#getContent() */
-    @Override
+    //@Override
     public Text getContent() {
         throw new UnsupportedOperationException();
     }
 
     /** @see sortpom.wrapper.Wrapper#isBefore(sortpom.wrapper.Wrapper) */
-    @Override
+    //@Override
     public boolean isBefore(final Wrapper<? extends Content> wrapper) {
         throw new UnsupportedOperationException();
     }
 
     /** @see sortpom.wrapper.Wrapper#isContentElement() */
-    @Override
+    //@Override
     public boolean isContentElement() {
         throw new UnsupportedOperationException();
     }
 
     /** @see sortpom.wrapper.Wrapper#isResortable() */
-    @Override
+    //@Override
     public boolean isResortable() {
         throw new UnsupportedOperationException();
     }
 
-    @Override
+    //@Override
     public String toString() {
         throw new UnsupportedOperationException();
     }
 
-    @Override
+    //@Override
     public String toString(String indent) {
         throw new UnsupportedOperationException();
     }

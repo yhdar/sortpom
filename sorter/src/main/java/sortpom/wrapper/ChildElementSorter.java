@@ -94,7 +94,7 @@ public class ChildElementSorter {
         return Scope.getScope(childElementText).compareTo(Scope.getScope(otherChildElementText));
     }
 
-    @Override
+    //@Override
     public String toString() {
         return "ChildElementSorter{" +
                 "childElementTexts=" + (childElementTexts == null ? null : Arrays.asList(childElementTexts)) +
@@ -103,7 +103,7 @@ public class ChildElementSorter {
 
     public void setEmptyPluginGroupIdValue(String value) {
         for (int i = 0, childElementNamesLength = childElementNames.length; i < childElementNamesLength; i++) {
-            if ("groupId".equalsIgnoreCase(childElementNames[i]) && childElementTexts[i].isEmpty()) {
+            if ("groupId".equalsIgnoreCase(childElementNames[i]) && childElementTexts[i].length() == 0) {
                 childElementTexts[i] = value;   
             }
 
@@ -114,7 +114,7 @@ public class ChildElementSorter {
         COMPILE, PROVIDED, SYSTEM, RUNTIME, IMPORT, TEST, OTHER;
 
         public static Scope getScope(String scope) {
-            if (scope == null || scope.isEmpty()) {
+            if (scope == null || scope.length() == 0) {
                 return COMPILE;
             }
             Scope[] values = Scope.values();

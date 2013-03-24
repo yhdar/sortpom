@@ -13,17 +13,17 @@ public class MavenLogger implements SortPomLogger {
         this.log = log;
     }
 
-    @Override
+    //@Override
     public void warn(String content) {
         log.warn(content);
     }
 
-    @Override
+    //@Override
     public void info(String content) {
         log.info(content);
     }
 
-    @Override
+    //@Override
     public void error(String content) {
         log.error(content);
     }

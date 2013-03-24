@@ -208,17 +208,17 @@ class TestHandler {
     private SortPomLogger createDummyLog() {
         return new SortPomLogger() {
 
-            @Override
+            //@Override
             public void info(String content) {
                 infoLogger.add("[INFO] " + content);
             }
 
-            @Override
+            //@Override
             public void warn(String content) {
                 infoLogger.add("[WARNING] " + content);
             }
 
-            @Override
+            //@Override
             public void error(String content) {
                 infoLogger.add("[ERROR] " + content);
             }
